@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+  background-color: #add8e6; /* Light blue background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered box styles */
+.center-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: white; /* Form in white */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Input field styles */
+.text-field {
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: 2px solid #add8e6; /* Adjust border color */
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333; /* Adjust text color */
+  background-color: white; /* Input field background */
+  width: calc(100% - 20px);
+  transition: color 0.3s, border-color 0.3s; /* Add transition effect */
+}
+
+.text-field:hover {
+  color: black; /* Input field text color on hover */
+  border-color: black; /* Input field border color on hover */
+}
+
+/* Button styles */ 
+.btn-style,
+.an-btn {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #ff69b4; /* Pinkish color for buttons */
+  color: white; /* Text color for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.btn-style:hover,
+.an-btn:hover {
+  background-color: black; /* Black on hover for all buttons */
+  color: white; /* Text color on hover */
+}
+
+#login-btn {
+  background-color: #ff69b4; /* Pinkish color for Login button */
+  color: white; /* Text color for Login button */
+}
+
+#login-btn:hover {
+  background-color: black; /* Black on hover for Login button */
+  color: white; /* Text color on hover */
+}
+
+/* Hide registration div initially */
+#register-div {
+  display: none;
+}
+
+/* Result box styles */
+#result-box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+/* Heading modifications */
+.center-box h2 {
+  color: #333; /* Heading text color */
+  margin-bottom: 15px;
+}
+
+#login-div h2::before,
+#register-div h2::before {
+  content: 'Nchat '; /* Prefix for the heading */
+  color: #87ceeb; /* Prefix text color */
+}
+
+#login-div h2 {
+  content: 'Login';
+}
+
+#register-div h2 {
+  content: 'Register';
+}
+
+/* Your other CSS styles go here, uncommented and adjusted as needed */
+/* .nav-logo, .nav-logo img, etc. */
+
+/* Additional styles... */
